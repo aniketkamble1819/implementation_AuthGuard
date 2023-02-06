@@ -1,0 +1,35 @@
+
+<div class="container p-5 mt-5">
+  <div class="row mt-5
+  " >
+    <div class="col-lg-4 mx-auto">
+      <form [formGroup]="formdata" (ngSubmit)="login(formdata.value)">
+        <h1>login</h1>
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form2Example1">Email address</label>
+          <input type="email" id="form2Example1" class="form-control" formControlName="email" />
+
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form2Example2">Password</label>
+
+          <input type="password" id="form2Example2" class="form-control" formControlName="password" />
+        </div>
+
+        <!-- 2 column grid layout for inline styling -->
+
+
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+        <!-- Register buttons -->
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
